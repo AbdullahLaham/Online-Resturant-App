@@ -3,9 +3,8 @@
     padding: 0;
     box-sizing: border-box;
 }
-body {
-    background: linear-gradient(rgb(245, 200, 116), rgba(255, 187, 0, 0.911));
-    overflow-x: hidden;
+body {  
+     width: 100%;
 }
 ul.toggleMenu {
     display: none;
@@ -103,124 +102,31 @@ form i {
     position: absolute;
     right: 5rem;
 }
-.container {
-    overflow: hidden;
-    width: 24.3rem;
-    position: relative;
-}
-.slider {
+.dishes {
     display: flex;
-    transition: 1s;
-}
-picture img {
-    width: 24.3rem;
-    height: 14rem; 
-}
-.next, .prev {
-    position: absolute;
-    top: 50%;
-    z-index: 10000;
-    background: white;
-    width: 1.5rem;
-    height: 1.5rem;
-    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
     align-items: center;
     justify-content: center;
-    border-radius: 50%;
-    font-size: 1.5rem;
-    cursor: pointer;
-    transform: translateY(-50%);
-    right: 1rem;
 }
-.prev {
-    left: 1rem;
-}
-.categories {
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-    margin: .1rem;
-}
-.sliderr {
-    display: flex;
-    transition: .9s;
-}
-.categories .prev, .categories .next {
-    padding: 1rem;
-    top: 54%;
-    opacity: .7;
-}
-.categories .prev {
-    left: .1rem;
-}
-.categories .next {
-    right: .1rem;
-}
-.category {
-    width: 23.5rem;
-}
-.category img {
-    width: 23.5rem;
-    height: 14rem;
+.dishes img {
+    width: 11.5rem;
+    height: 12rem;
     object-fit: cover;
-    padding: .5rem;
 }
-.footer {
+.dishes p {
+    font-size: 1.2rem;
+    word-break: break-all;
+    width: 11.5rem;
+}
+.dish {
+    margin: 1rem .3rem;
+}
+.dish .footer {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    margin: 1rem;
-    height: 1rem;
+    width: 11.5rem;
 }
 .footer i {
-    font-size: 1.5rem;
-}
-.footer p {
-    font-size: 2rem;
-}
-.footer i.active {
-    color: red;
-    font-weight: 800;
-    font-size: 2rem
-}
-.randomMeal img, .searched img{
-    width: 24.2rem;
-    height: 12.5rem;
-    object-fit: cover;
-}
-.randomMeal .footer p {
-    font-size: 1.5rem;
-}
-.moreInfo {
-    width: 100%;
-    top: 10%;
-    position: absolute;
-    background-color: white;
-    z-index: 10000;
-    backdrop-filter: blur(10px);
-}
-.moreInfo.hide {
-    display: none;
-}
-.moreInfo img {
-    width: 24.5rem;
-    height: 20rem;
-    object-fit: cover;
-}
-.mealInfo  {
-    font-size: 3rem;
-    background: white;
-    background: rgb(236, 179, 54);
-}
-.instructions {
-    font-size:1.5rem;
-}
-
-.moreInfo .uil-times {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    font-size: 5rem;
-    color: red;
-    cursor: pointer;
+    font-size: 1.2rem;
 }
