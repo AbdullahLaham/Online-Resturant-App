@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul.toggleMenu {
+    display: none;
+    position: absolute;
+    top: 5rem;
+    right: 0;
+    background: white;
+    width: 13rem;
+    font-size: 2rem;
+    z-index: 100000;
+    height: 100%;
+    padding: 1rem;
+}
+.toggleMenu.active {
+    display: block;
+}
+ul li {
+    list-style: none;
+    margin-top: 2.5rem;
+}
+a {
+    text-decoration: none;
+    color: black;
+    
+}
+header {
+    background-color: white;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.logo img {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+
+}
+/* ************************************************* */
+.menu{
+    height: 1.7rem;
+    width: 2rem;
+    cursor: pointer;
+    position: relative;
+}
+.menu span {
+    background-color: black;
+    height: .3rem;
+    width: 100%;
+    left: 0;
+    transition: .3s ease;
+    position: absolute;
+}
+.menu span:first-child {
+    top: 0;
+}
+.menu span:nth-child(2) {
+    top: .7rem;
+}
+.menu span:last-child {
+    bottom: 0;
+}
+.menu.active span:nth-child(2) {
+    opacity: 0;
+}
+.menu.active span:first-child, .menu.active span:last-child {
+    top: .7rem;
+    background-color: red;
+}
+.menu.active span:first-child {
+    transform: rotate(50deg)
+}
+.menu.active span:last-child {
+    transform: rotate(-50deg)
+}
+.favoriteMeals {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+
+}
+.favoriteMeals img {
+    width: 24rem;
+    margin: auto;
+}
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    margin: .5rem;
+}
